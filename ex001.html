@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 01</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #282828;
+}
+
+    .container {
+      padding: 12px;
+      border: 1px solid;
+      border-color: deeppink; 
+      width: fit-content;  
+    }
+
+    h1, p {
+      padding: 8px 16px;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      line-height: 1em;
+      white-space: nowrap;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 15px;
+      margin-top: 4px;
+    }
+
+    .channel {
+      font-weight: 600;
+    }
+
+    .student {
+      font-size: 14px;
+    }
+    
+    @media only screen and (max-width: 380px)  {
+      .container {
+        padding: 8px;
+      }
+
+      h1 {
+        font-size: 24px;
+        white-space: nowrap;
+      }
+
+      p { 
+        font-size: 14px;
+      }
+    }
+
+    @media only screen and (min-width: 601px) {
+      /* Estilos específicos para telas maiores que 600 pixels de largura (telas desktop) */
+      .container {
+        padding: 24px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+      
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>JavaScript Study</h1>
+    <p class="channel">Font / Youtube Curso em Vídeo</p>
+    <p class="student">onThigoOliveira, 2024 January</p></p>
+  </div>
+</body>
+</html>
