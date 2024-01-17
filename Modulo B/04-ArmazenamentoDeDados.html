@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 06 | Manipulação de Dados</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #0D0D0D;
+      color: #FFF;
+      font-family: 'Arial', sans-serif;
+
+}
+    
+  </style>
+</head>
+<body>
+    
+  <script>
+
+    // Armazenando e Manipulando dados
+    var nameUser = prompt('Nome de usuário: ');
+    
+
+    // document.write escreve no html e exibe para o usuário.
+    // variável.length verifica a quantidade de caracteres presentes.
+    document.write(`<h1>Olá, <strong>${nameUser}</strong>!</h1><br/>`);
+    document.write(`<p>Seu nome tem ${nameUser.length} letras.</p>`)
+
+
+    // Formatando números
+    /* Convertendo moeda para Real
+    variavel.toLocaleString("pt-BR", {style:"currency", currency:"BRL"}); */
+
+    // Para substituir . por , em numeros reais, use varialvel.toFixed(2).replace('.', ',')
+    
+
+  </script>
+  
+</body>
+</html>

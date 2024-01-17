@@ -44,4 +44,5 @@
      Valores lógicos, true or false
 */
 
-
+let salario = 1460.32;
+console.log(salario.toLocaleString("pt-BR", {style:"currency", currency:"BRL"}))
