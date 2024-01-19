@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ex. OPeradores Aritméticos</title>
+  <style>
+    body {
+      height: 100vh;
+      background-color: #0d0d0d;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      align-items: center;  
+      justify-content: center;    
+    }
+
+    .box {
+      width: 320px;
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+      border-radius: 10px;
+      border: 1px solid deeppink;
+      border-radius: 12px;
+    }
+
+
+    .main-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 4px 12px;
+      gap: 40px;
+      
+    }
+
+    .title{
+      font-size: 10px;
+    }
+
+    .logical {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    .expression-left, .result {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 8px ;
+      justify-content: center;
+      align-items: center;
+    }
+
+  </style>
+</head>
+<body>
+
+  <script>
+    function operacao (numero1, numero2) {
+
+      let multiplicacao = numero1 + numero2; 
+      let soma  = numero1 * numero2;
+      let divisao = numero1 / numero2
+      let resto = numero1 % numero2;
+      let exponeciacao = numero1 ** numero2;
+
+      document.write(` 
+      <div class="box">
+        <div class="main-title">
+          <div class="title">
+            <h1>Operação</h1>
+          </div>
+          <div class="title">
+            <h1>Resultado</h1>
+          </div>  
+        </div>  
+      
+      <div class="logical">
+        <div class="expression-left">
+          <p>${numero1} + ${numero2}</p>
+          <p>${numero1} * ${numero2}</p>
+          <p>${numero1} / ${numero2}</p>
+          <p>${numero1} % ${numero2}</p>
+          <p>${numero1} ** ${numero2}</p>
+        </div>
+
+        <div class="result">
+          <p>${multiplicacao}</p>
+          <p>${soma}</p>
+          <p>${divisao.toFixed(2)}</p>
+          <p>${resto}</p>
+          <p>${exponeciacao}</p>
+        </div>  
+        </div>  
+      </div>`
+      );
+      
+}
+ 
+var n1 = Number(prompt('Informe o primeiro número: '));
+var n2 = Number(prompt('Informe o segundo número: '));
+const resultado = operacao(n1, n2);
+
+  </script>
+  
+</body>
+</html>
