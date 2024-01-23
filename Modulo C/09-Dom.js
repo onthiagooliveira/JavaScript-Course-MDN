@@ -82,4 +82,13 @@
   conformidade com o padrão DOM real, mas todo navegador usa um modelo de objeto de documento para tornar as 
   páginas da web acessíveis via JavaScript.
 
+  exemplo 09-dom.html
+
+
+  ? Tipos de dados fundamentais
+  
+  * Nota> COmo a grande maioria do código que usa o DOM gia em torno da minupulação de documentos HTML, é comum, 
+  sempre se referir aos nós no DOM como Elementos, pois em um documento HTML, cada nó é um elemento. 
+
+
 */
