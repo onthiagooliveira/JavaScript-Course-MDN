@@ -16,6 +16,4 @@
   ? !  => NOT   Negação lógica 
   Retorna falso caso o único operado possa ser convertido para verdadeiro, se não retorna verdadeiro.
 
- !CONTINUAR ESTUDO À PATIR DO MINUTO 19.MN OPERADOR TERNÁRIO
-
   */
