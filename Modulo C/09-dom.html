@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+  <script>
+    
+    // Quando a página for carregada executará...
+    window.onload = function () {
+
+      // Define uma variável que recebe uma tag <h1> vazia, 
+      var heading = document.createElement("h1");
+      
+      // Define uma variável que armazena uma string com o título
+      var heading_text = document.createTextNode("Título adicionado!"); 
+
+      // Adiciona a variável heading (que possui a tag <h1> vazia até então) a String contida em heading_text 
+      heading.appendChild(heading_text);
+      
+      // Adiciona ao corpo do documento o elemento <h1> contido em heading
+      document.body.appendChild(heading)
+
+      // O mesmo processo com um paragráfo
+      var paragraph = document.createElement('p');
+      var paragraph_Text = document.createTextNode('Paragráfo adicionado!')
+      paragraph.appendChild(paragraph_Text);
+      document.body.appendChild(paragraph);
+
+      
+    }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
