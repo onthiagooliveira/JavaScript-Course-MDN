@@ -6,6 +6,8 @@
     <title>Manipulando DOM</title>
   </head>
   <style>
+    
+    /* Styling internally*/
     * {
       margin: 0;
       padding: 0;
@@ -13,109 +15,122 @@
     }
 
     body {
-      font-family: "Arial", sans-serif;
       width: auto;
       height: 100vh;
+      font-family: 'Arial', sans-serif;
+      
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #0d0d0d;
-      color: #fff;
+      background: white;
+
+      
     }
 
-    .container {
-      position: relative;
-      padding: 70px;
+    main {
+      width: min-content;
+      height: 200px;
+      padding: 8px 12px;
+
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      border: solid;
-      border-width: 1px;
-      border-color: deeppink;
-      gap: 40px;
     }
 
-    .entrada-dados {
-      width: 300px;
-      display: flex;
-      flex-direction: row;
-      gap: 20px;
+    .featured-title {
+      font-weight: 500;
+      font-size: 20px;
       margin-bottom: 30px;
     }
 
-    .line {
-      display: flex;
-      align-items: center;
-    }
-
-    input,
-    #resultado {
-      display: flex;
-      flex: 1;
+    .container {
       width: 100%;
-      padding: 12px;
-      outline: none;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
     }
 
-    #resultado {
+    .logical {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
       align-items: center;
+    }
+
+    .fieldInput, #fieldResult,
+     .buttonSend, .fieldOperator, .fieldAssignment {
+      display: flex;
       justify-content: center;
-      align-items: center;
-      border-radius: 10px;
-      color: #fff;
+      flex: 1;
+      margin-right: 16px;
+    }
+
+    input, #fieldResult {
+      text-align: center;
+      width: 100px;
+      padding: 8px 12px;
+      font-size: 14px;
+      outline: none;
+      border: none;
+      background-color: #f3f3f3;
+    }
+
+
+
+    .buttonSend {
+      width: 95%;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
     }
 
     #submit {
-      display: flex;
-      justify-content: center;
-      margin-top: 30px;
+      font-weight: 600;
+      width: 100%;
+      background-color: #278C7A;
+      color: #FFF;
+
     }
+
   </style>
   <body>
-    <div class="container">
-      <div class="title">
-        <h1>Somando Dois números</h1>
+
+    <main>
+      
+      <div class="featured-title">
+        <h1>Calculadora</h1>
       </div>
 
-      <div>
-        <form action="post" class="entrada-dados">
-          <div class="line">
-            <input
-              type="text"
-              id="numero1"
-              pattern="[0-9]{0-6}"
-              minlength="1"
-              maxlength="6"
-              placeholder="Número"
-            />
+      <div class="container">
+        <div class="logical">
+          <div class="fieldInput">
+            <input type="text" id="numero1" pattern="[0-9]{0-6}" minlength="1" maxlength="6"
+            placeholder="Número" required /> 
+          </div> 
+          <div class="fieldOperator">
+            +
           </div>
-          <div class="line">+</div>
-          <div class="line">
-            <input
-              type="text"
-              id="numero2"
-              pattern="[0-9]{0-6}"
-              minlength="1"
-              maxlength="6"
-              placeholder="Número"
-            />
+          <div class="fieldInput">
+            <input type="text" id="numero2" pattern="[0-9]{0-6}" minlength="1" maxlength="6"
+            placeholder="Número" required />
           </div>
-          <div class="line">=</div>
-          <div id="resultado">0</div>
-        </form>
-
-        <div class="dados-bottom">
+          <div class="fieldAssignment">
+            =
+          </div>
+          <div id="fieldResult">
+            0
+          </div>
+        </div>
+        <div class="buttonSend">
           <input id="submit" type="submit" value="Calcular" />
         </div>
+
       </div>
-    </div>
+    </main>
 
     <script>
       const campo1 = document.getElementById("numero1");
       const campo2 = document.getElementById("numero2");
+      const resultado = document.getElementById("fieldResult");
       const submit = document.getElementById("submit");
-      const resultado = document.getElementById("resultado");
 
       submit.addEventListener("click", multiplicar);
 
@@ -123,7 +138,8 @@
         let numero1 = Number(campo1.value);
         let numero2 = Number(campo2.value);
         let multiplicacao = numero1 + numero2;
-        resultado.innerHTML = `${multiplicacao}`;
+          resultado.innerHTML = `${multiplicacao}`;
+        
       }
     </script>
   </body>
