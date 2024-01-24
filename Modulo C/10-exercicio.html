@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulando DOM</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Arial", sans-serif;
+      width: auto;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #0d0d0d;
+      color: #fff;
+    }
+
+    .container {
+      position: relative;
+      padding: 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: solid;
+      border-width: 1px;
+      border-color: deeppink;
+      gap: 40px;
+    }
+
+    .entrada-dados {
+      width: 300px;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .line {
+      display: flex;
+      align-items: center;
+    }
+
+    input,
+    #resultado {
+      display: flex;
+      flex: 1;
+      width: 100%;
+      padding: 12px;
+      outline: none;
+      text-align: center;
+    }
+
+    #resultado {
+      align-items: center;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      color: #fff;
+    }
+
+    #submit {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Somando Dois números</h1>
+      </div>
+
+      <div>
+        <form action="post" class="entrada-dados">
+          <div class="line">
+            <input
+              type="text"
+              id="numero1"
+              pattern="[0-9]{0-6}"
+              minlength="1"
+              maxlength="6"
+              placeholder="Número"
+            />
+          </div>
+          <div class="line">+</div>
+          <div class="line">
+            <input
+              type="text"
+              id="numero2"
+              pattern="[0-9]{0-6}"
+              minlength="1"
+              maxlength="6"
+              placeholder="Número"
+            />
+          </div>
+          <div class="line">=</div>
+          <div id="resultado">0</div>
+        </form>
+
+        <div class="dados-bottom">
+          <input id="submit" type="submit" value="Calcular" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const campo1 = document.getElementById("numero1");
+      const campo2 = document.getElementById("numero2");
+      const submit = document.getElementById("submit");
+      const resultado = document.getElementById("resultado");
+
+      submit.addEventListener("click", multiplicar);
+
+      function multiplicar() {
+        let numero1 = Number(campo1.value);
+        let numero2 = Number(campo2.value);
+        let multiplicacao = numero1 + numero2;
+        resultado.innerHTML = `${multiplicacao}`;
+      }
+    </script>
+  </body>
+</html>
