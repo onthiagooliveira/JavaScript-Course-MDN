@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction JS | Interno</title>
+  <style>
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    button {
+      padding: 8px 16px;
+      width: content;
+      white-space: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <button>Clique aqui</button>
+
+  <script>
+
+   // O script fica aqui
+   function criarParagrafo() {
+    let paragrafo = document.createElement("p");
+    paragrafo.textContent = `Você clicou no botão!`
+    document.body.appendChild(paragrafo);
+   }
+
+   // Selecionamos todos as ocorrencias de button na página
+   const botoes = document.querySelectorAll("button");
+
+  //  A cada click, armazenamos na variavel contadora que dispara o comando de criar paragrafo
+   for (var i = 0; i < botoes.length; i++) {
+    botoes[i].addEventListener("click", criarParagrafo)
+   }
+  </script>
+  
+</body>
+</html>

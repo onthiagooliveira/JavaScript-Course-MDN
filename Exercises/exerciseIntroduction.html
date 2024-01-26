@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction JS</title>
+  <style>
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    button {
+      padding: 8px 16px;
+      width: content;
+      white-space: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <button>Nome</button>
+
+  <script>
+    // Declaramos uma variável que recebe atravé do DOM a tag HTML button
+    const button = document.querySelector("button");
+
+    // Adicionamos o disparo da função updateName ao clicar do mouse
+    button.addEventListener("click", updateName);
+
+    // Declaramos a função sem parametros
+    function updateName () {
+      //  Declaramos uma variável que recebe do usuário o valor inserido no prompt
+      let name = prompt("Digite seu usuário");
+      // atribuímos a variável que armazena a tag HTMl o valor contigo na variável name
+      button.textContent = `Olá, ${name}`;
+    }
+  </script>
+  
+</body>
+</html>
