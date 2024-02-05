@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>What is a variable</title>
+  <style></style>
+</head>
+<body>
+
+  <button id="button_A">Press me</button>
+  <h3 id="heading_A"></h3>
+
+  <script>
+    const button_A = document.querySelector('#button_A');
+    const heading_A = document.querySelector('#heading_A');
+
+    button_A.onclick = () => {
+      const name = prompt('What is your name? ');
+      alert(`Hello ${name}, nice to see you!`);
+      heading_A.textContent = `Welcome ${name}`;
+    }
+    
+  </script>
+</body>
+</html>
