@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Prática Operadores de atribuição e Comparação</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-content: center;
+      }
+
+      button {
+        padding: 12px 24px;
+        border: none;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <button>ON</button>
+    <p></p>
+  </body>
+  
+  <script>
+    /*  Steps :
+      1 | Recebendo e armazena os dados para manipulação no JS 
+      2 | Adicionando a função quando o botão for acionado com um click
+      3 | Se o conteúdo do botão for 'ON'então:
+      4 | Botão deverá ter conteúdo alterado para 'OFF'
+      5 | Informar que luzes estão ativadas
+      6 | Se o conteúdo do botão for 'OFF' então:
+      7 | Botão deverá ter conteúdo alterado para ON;
+      8 | Informar que a máquina foi desativada
+
+      9| Alterando Luzes e cores - opcional
+    */
+
+    let button = document.querySelector("button");
+    let paragraph = document.querySelector("p");
+    let body = document.querySelector('body');
+
+    button.addEventListener("click", updateBtn);
+
+    function updateBtn() {
+     if (button.textContent === 'ON') {
+      button.textContent = 'OFF';
+      paragraph.textContent = 'Luzes ativadas';
+      body.style.backgroundColor = '#F29544';
+     } else {
+      button.textContent = 'ON'; 
+      paragraph.textContent = 'Luzes desativadas';
+      body.style.backgroundColor = '#5CB9F2';      
+     }
+    }
+  </script>
+</html>
