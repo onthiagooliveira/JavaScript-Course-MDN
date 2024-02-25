@@ -1,6 +1,13 @@
-html {
-  font-family: 'Arial', sans-serif;
+@font-face {
+  font-family: "Riddler Regular";
+  src: url("/1 - UmPrimeiroMegulhoNoJS/Jogo-Advinhacao/Font-Riddler/Riddler.eot") format("eot"),
+    url("/1 - UmPrimeiroMegulhoNoJS/Jogo-Advinhacao/Font-Riddler/Riddler.woff") format("woff"),
+    url("/1 - UmPrimeiroMegulhoNoJS/Jogo-Advinhacao/Font-Riddler/Riddler.ttf") format("truetype"),
+    url("/1 - UmPrimeiroMegulhoNoJS/Jogo-Advinhacao/Font-Riddler/Riddler.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
+
 
 * {
   margin: 0;
@@ -12,13 +19,16 @@ body {
   width: 100vw;
   height: 100vh; 
   background-color: black;
-  background-image: url(https://images.unsplash.com/photo-1633269540827-728aabbb7646?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-  background-position: center;
+  background-image: url(https://cdn.dribbble.com/userupload/10867364/file/original-12fd939c7e860f1377b9fbcfb5defa09.png?resize=1024x768);
+  background-position: top;
   background-repeat:no-repeat;
-  background-size: contain;
+  background-size: cover;
+  backdrop-filter: brightness(0.2);  
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Arial', sans-serif;
+  
 }
 
 .container {
@@ -31,17 +41,20 @@ body {
   flex-direction: column;
   padding: 30px 40px;
   white-space: nowrap;
+  filter: none; 
 }
 
 h1, 
 h2,
 form, input {
   color: #0D0D0D;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Arial', sans-serif
 }
 
 h1 {
-  font-size: 28px;
+  color: #154536;
+  font-family: 'Riddler regular';
+  font-size: 30px;
 }
 
 h2, form {
@@ -68,7 +81,8 @@ form {
 }
 
 input {
-  border-color: #0D0D0D;
+  color: #154536#000;
+  border-color: #154536;
   border-style: solid;
   border-radius: 4px;
   border-width: 1px;
@@ -83,7 +97,7 @@ input {
 }
 
 #submit-button {
-  background-color: #337AA6;
+  background-color: #154536;
   border: none;
   color: #FFF;
   font-weight: 500;
