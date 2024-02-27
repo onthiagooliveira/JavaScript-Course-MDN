@@ -55,12 +55,18 @@ console.log(
 const str = 'The quick brown fox jumps over the lazy dog.';
 
 console.log(
-  // Aqui passamos apenas o startIndex, e ele extrai a nova string até o último indíce.
+  /* Aqui passamos apenas o startIndex, e ele extrai a nova string a partir do startIndex
+  até o cumprimento da string. */
   str.slice(10),
 );
 
 console.log(
   /* Aqui passamos o startIndex e o endIndex, 
-  sendo o segundo parâmetro igual ao comprimento da string que está sendo retornada*/
+  sendo o segundo parâmetro igual ao comprimento da string que está sendo retornada.*/
   str.slice(4, -1)
 );
+
+// ? Mudando entre maíusculas e minúsculas | toLowerCase() and toUpperCase()
+var radData = 'My name is MuD';
+console.log(radData.toLocaleLowerCase());
+console.log(radData.toUpperCase());
