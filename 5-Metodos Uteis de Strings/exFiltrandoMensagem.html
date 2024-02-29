@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercício | Filtrando Mensagens com JS</title>
+    <style></style>
+  </head>
+  <body>
+    <div class="output">
+      <ul></ul>
+    </div>
+    <div class="text-error"></div>
+
+    <script>
+      /*
+        ? Filtrando mensagens de saudação
+
+        No primeiro exercício, começaremos com simplicidade - temos várias mensagens de cartão, mas queremos
+        classificá-las para listar apenas as mensagens de Natal. Queremos que você preencha um teste condicional
+        dentro da estrutura if (...), para testar cada string e apenas imprimi-la na lista se for uma mensagem de Natal.
+
+        1. Primeiro pense em como você poderia testar se a mensagem em cada caso é uma mensagem de Natal. Qual string
+        está presente em todas essas mensagens e que método você poderia usar para testar se ela está presente?
+
+        2. Em seguida, você precisará escrever um teste condicional do formulario operando2 operador operando1. A coisa
+        à esquerda é igual à coisa à direita? Ou neste caso, o método chama à esquerda retorna o resultado à direita?
+
+        3.Dica: Nesse caso, é provavelmente mais útil testar se a chamada do método não é igual a um determinado resultado.
+      */
+
+      var list = document.querySelector(".output ul");
+      list.innerHTML = "";
+
+      var greetings = [
+        "Feliz natal pessoal!",
+        "Um feliz natal para toda família",
+        "Ceia de natal ou churrasco?", 
+        "Fique bem logo"
+      ];
+
+      for (var c = 0; c < greetings.length; c++) {
+        let inputGreetings = greetings[c];
+
+        if (greetings[c].indexOf("natal") !== -1) {
+          let result = inputGreetings;
+          
+          var listItem = document.createElement("li");
+          listItem.textContent = result;
+          list.appendChild(listItem);
+        }
+      }
+
+    </script>
+  </body>
+</html>

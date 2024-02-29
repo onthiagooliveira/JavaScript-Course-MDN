@@ -16,6 +16,8 @@ console.log(
   browserType1[browserType1.length - 1]
 );
 
+
+
 // ? Método Indexof(SearchValue) 
 // Buscando uma substring dentro de uma string 
 console.log(
@@ -44,7 +46,9 @@ else {
   console.log(`Browser Type não contém ${browserType1}`);
 }
 
-// ? Método slice
+
+
+// ? Método slice()
 // Extraindo uma substring à partir de uma string sem modificá-la
 console.log(
   browserType1.slice(0, 3) //slice(startIndex, endIndex)
@@ -66,7 +70,34 @@ console.log(
   str.slice(4, -1)
 );
 
+
+
 // ? Mudando entre maíusculas e minúsculas | toLowerCase() and toUpperCase()
 var radData = 'My name is MuD';
-console.log(radData.toLocaleLowerCase());
-console.log(radData.toUpperCase());
+
+console.log(
+  radData.toLocaleLowerCase(),'\n',
+  radData.toUpperCase(), 
+);
+
+
+
+// ? Método replace()
+
+console.log(
+  browserType1.replace('mo', 'God')
+);
+
+const paragraph = `I think Ruth's dog is cuter than your dog!`
+
+console.log(
+  paragraph.replace(`Ruth's`, `my`)
+  // Expected output: `I think my dog is my cuter than your dog!`
+); 
+
+const regex = /Dog/i; // regEx/ignore - Mais avançada, não aprodundamos ainda o estudo
+console.log(
+  paragraph.replace(regex, 'ferret')
+  // Expected output: `I think Ruth's ferret is my cutter than your dog!`
+);
+
