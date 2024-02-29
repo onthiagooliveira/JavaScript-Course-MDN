@@ -29,30 +29,32 @@
         4. Altere o valor da variável result para o resultado final pretendido, não o input.
         */
 
-        var list = document.querySelector('.output ul');
-        list.innerHTML = ``; 
+      var list = document.querySelector(".output ul");
+      list.innerHTML = ``;
 
-        var cities = [
-          'lonDon', 
-          'ManChester', 
-          'BirmiNGHAN', 
-          'liVERpOL',
-          'sAO PAulo',
-          'braSiLia',
-          'fOZ Do IGUAçU'
-        ];
+      var cities = [
+        "lonDon",
+        "ManChester",
+        "BirmiNGHAN",
+        "liVERpOL",
+        "sAO PAulo",
+        "braSiLia",
+        "fOZ Do IGUAçU",
+      ];
 
-        for (var i = 0; i < cities.length; i++) {
-          let minusculeCities = cities[i].toLocaleLowerCase();
-          let firstLetter = minusculeCities.slice(0,1); // slice(0,1)  é o mesmo que minuculeCities[0]
-          let capitalized = minusculeCities.replace(minusculeCities[0], firstLetter.toUpperCase());
-          let result = capitalized; 
-                       
-          var listItem = document.createElement('li');
-          listItem.textContent = result;
-          list.appendChild(listItem);
-          }
+      for (var i = 0; i < cities.length; i++) {
+        let minusculeCities = cities[i].toLocaleLowerCase();
+        let firstLetter = minusculeCities.slice(0, 1); // slice(0,1)  é o mesmo que minuculeCities[0]
+        let capitalized = minusculeCities.replace(
+          minusculeCities[0],
+          firstLetter.toUpperCase()
+        );
+        let result = capitalized;
 
+        var listItem = document.createElement("li");
+        listItem.textContent = result;
+        list.appendChild(listItem);
+      }
     </script>
   </body>
 </html>
