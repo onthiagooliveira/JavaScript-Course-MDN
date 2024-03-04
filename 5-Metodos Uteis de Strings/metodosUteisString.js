@@ -1,44 +1,40 @@
 // ? Métodos úteis de String
 var browserType1 = 'mozilla';
 
-console.log(
-  // retorna o comprimento da string
-  browserType1.length   
-); 
+// retorna o comprimento da string
+browserType1.length;    
 
 // Acessando um caractere específico da string
-console.log(
-  // retorna a primeira letra
-  browserType1[0]  
-);
-console.log(
-  // retorna a última letra
-  browserType1[browserType1.length - 1]
-);
+browserType1[0];
+// retorna a primeira letra
+
+browserTpe1[browserType1.length - ;
+// retorna a última letra
 
 
 
-// ? Método Indexof(SearchValue) 
-// Buscando uma substring dentro de uma string 
-console.log(
-  // Retorna 2, Pois 'Zilla' foi encontrada pela primeira vez à partir desse indice
-  browserType1.indexOf('zilla') 
+/** Métodos úteis de String, 
+
+Método Indexof(SearchValue) */
+
+// Buscando uma substring dentro de uma string   
+browserType1 = indexOf('zilla') 
+// Retorna 2, pois 'Zila' foi encontrada pela primeira vez à partir desse indi;
 )
 
 // Resultado quando uma susbtring dentro de uma string não é localizada
-console.log (
-  // return -1
-  browserType1.indexOf('Vanilla') 
-)
+browserTétodosúteis de Stringype1.indexOf('Vanilla');
+// return -1
+
 
 // Resultado quando uma substring é localizada dentro de uma string
-console.log (
-  // Localizada á partir do índice 0
-  browserType1.indexOf('mozilla'), 
-)
+browserType1.indexOf('mozilla'), 
+//return 0, Localizada á partir do índice 0
+
 
 // Buscando uma substring de forma mais eficaz
-// Se variável.indexof contén a string 'mozilla' for !== não existente
+  
+// Se variável.indexof contém a string 'mozilla' for !== não existente
 if (browserType1.indexOf('mozilla') !== -1) {  
   console.log(`Browser Type contém ${browserType1}`);
 }
