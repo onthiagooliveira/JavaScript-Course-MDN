@@ -14,7 +14,7 @@
       /*
         Corrigindo a capitalização
 
-        Neste exercício, temos os nomes das cidades Reino Unido, mas a capitalização está toda desarrumada.
+        Neste exercício, temos os nomes de cidades, mas a capitalização está toda desarrumada.
         Altere para que elas sejam todas minúsculas, exceto a primeira letra, que deve ser maiúscula. 
         Uma boa maneira de fazer isso é:
 
@@ -43,10 +43,7 @@
       for (var i = 0; i < cities.length; i++) {
         let minusculeCities = cities[i].toLocaleLowerCase();
         let firstLetter = minusculeCities.slice(0, 1); // slice(0,1)  é o mesmo que minuculeCities[0]
-        let capitalized = minusculeCities.replace(
-          minusculeCities[0],
-          firstLetter.toUpperCase()
-        );
+        let capitalized = minusculeCities.replace(minusculeCities[0], firstLetter.toUpperCase());
         let result = capitalized;
 
         var listItem = document.createElement("li");

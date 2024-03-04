@@ -1,9 +1,9 @@
 @font-face {
   font-family: "Riddler Regular";
   src: url("/1 - UmPrimeiroMegulhoNoJS/Jogo-Advinhacao/Font-Riddler/Riddler.eot") format("eot"),
-    url("/1 - UmPrimeiroMegulhoNoJS/Jogo-Advinhacao/Font-Riddler/Riddler.woff") format("woff"),
-    url("/1 - UmPrimeiroMegulhoNoJS/Jogo-Advinhacao/Font-Riddler/Riddler.ttf") format("truetype"),
-    url("/1 - UmPrimeiroMegulhoNoJS/Jogo-Advinhacao/Font-Riddler/Riddler.svg") format("svg");
+    url("/1-UmPrimeiroMegulhoNoJS/Jogo-Advinhacao/Font-Riddler/Riddler.woff") format("woff"),
+    url("/1-UmPrimeiroMegulhoNoJS/Jogo-Advinhacao/Font-Riddler/Riddler.ttf") format("truetype"),
+    url("/1-UmPrimeiroMegulhoNoJS/Jogo-Advinhacao/Font-Riddler/Riddler.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }

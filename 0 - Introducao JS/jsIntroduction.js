@@ -8,7 +8,7 @@
 
   ? HTML
   É a linguagem de marcação que nós usamos para estruturar e dar significado para nosso conteúdo web.
-  Por exemplo definindo parágrafos, cabeçalhos, tabelas de conteúdo, ou inserindo imagens e vídos na página.
+  Por exemplo definindo parágrafos, cabeçalhos, tabelas de conteúdo, ou inserindo imagens e vídeos na página.
 
   ? CSS
   É uma linguagem de regras de estilo que nós usamos para aplicar o estilo ao nosso conteúdo HTML.
@@ -17,6 +17,8 @@
   ? JavaScript
   É uma linguagem de programação que nos permite criar conteúdo que se atualiza dinimicamente, controlar
   multimídias, imagens animadas, e tudo o mais que há de interessante.
+
+
 
 
   ? O que ele pode Realmente fazer?
@@ -31,6 +33,7 @@
   - E muito mais...
 
 
+  
   ? A funcionalidade construída no topo do núcleo da linguagem JavaScript
   As APIs (Application Programming Interfaces - Interface de programação de Aplicativos) proveem superpoderes extras 
   para uarmos em nosso código JavaScript.
