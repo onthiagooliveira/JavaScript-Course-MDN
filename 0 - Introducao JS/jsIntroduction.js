@@ -170,7 +170,7 @@
     - Nesse modo você não tem garantia nenhuma que os scripts carregados irão rodar em uma ordem específica, mas saberá que dessa forma eles não irão
     impedir o carregamento do restante da página.
 
-    - O melhor uso para o async é quando os scripts de uma página rodam de forma independentes entre si e tmabém não dependem de nenhum outro script.
+    - O melhor uso para o async é quando os scripts de uma página rodam de forma independentes entre si e também não dependem de nenhum outro script.
     
       Por exemplo se tivermos os seguintes elementos script:
 
@@ -204,7 +204,7 @@
     
     * Resumindo
     
-    - async e defer instruem o browser a baixar os scipts num thread (processo) à parte, enquanto o resto da página (o DOM, etc) está sendo baixado e 
+    - async e defer instruem o browser a baixar os scripts num thread (processo) à parte, enquanto o resto da página (o DOM, etc) está sendo baixado e 
     disponibilizado de forma não bloqueante.
 
     - Se os seus scripts precisam rodar imediatamente, sem que dependam de outros para serem executados, use async.
