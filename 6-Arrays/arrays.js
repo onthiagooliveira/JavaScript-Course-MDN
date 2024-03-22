@@ -87,5 +87,12 @@ myArray;
 removeItemInicio;
 
 
+// * Definindo uma array com uma quantidade específica de posições
+let listaAlunos = new Array (30);
+// ou let listaAlunos = (40);
+
+
 //Execute view
-console.log(removeItemInicio);
+console.log(listaAlunos);
+
+

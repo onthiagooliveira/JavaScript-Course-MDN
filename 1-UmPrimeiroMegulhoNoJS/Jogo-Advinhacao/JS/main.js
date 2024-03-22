@@ -25,7 +25,7 @@ function  validatingNumber () {
       const randomNumberGenerate = generateRandomNumber();
       console.log(randomNumberGenerate);
 
-    // Se o palpite do usuário for igual ao número secreto gerado, o usuário acertpu.
+    // Se o palpite do usuário for igual ao número secreto gerado, o usuário acertou.
     if (userGuess === randomNumberGenerate) {
       console.log(`Você acertou! ${randomNumberGenerate}`);
       

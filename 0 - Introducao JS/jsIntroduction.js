@@ -1,7 +1,7 @@
 /* 
   ? O que é JavaScript
-  Javascript é uma linguagem de programação que permite implementar itens complexos em páginas web, 
-  toda vez que uma página web faz mais do que simplesmente mostrar a você infomações estática, mostrando
+  Javascript é uma linguagem de programação que permite implementar itens complexos em páginas web, toda 
+  vez que uma página web faz mais do que simplesmente mostrar a você infomações estática, mostrando
   conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D, animados, etc.
 
   É a terceira camada do bolo das tecnologias padões da web.
@@ -15,7 +15,7 @@
   Por exemplo, definindo cores de fundo e fontes, posicionando nosso conteúdo em múltiplas colunas.
 
   ? JavaScript
-  É uma linguagem de programação que nos permite criar conteúdo que se atualiza dinimicamente, controlar
+  É uma linguagem de programação que nos permite criar conteúdo que se atualiza dinamicamente, controlar
   multimídias, imagens animadas, e tudo o mais que há de interessante.
 
 
@@ -47,8 +47,8 @@
   Elas geralmente se dividem em duas categorias:
   
   ? APIs de navegadores
-  Já vem implementadas no naveagdor, e são capazes de expor dados do ambiente do computador, ou fazer coisas complexas e
-  úteis. Por exemplo:
+  Já vem implementadas no navegador, e são capazes de expor dados do ambiente do computador, ou fazer coisas complexas
+  e úteis. Por exemplo:
 
   - A API DOM (Document Object Model)
   Permite manipular HTML e CSS, criando, removendo e mudando HTML, aplicando dinamicamente novos estilos para a sua página
@@ -61,8 +61,8 @@
   Permite criar gráficos 2D e 3D animados. 
 
   - APIs de aúdio e vídeo
-  Como HTMLMediaElement e WebRTC nos permitem fazer coisas realmente interessantes com multimídia, tanto tocar música e vído
-  em uma página da web, como capturar vídeos com a sua câmera e exibir no computador de outra pessoa.
+  Como HTMLMediaElement e WebRTC nos permitem fazer coisas realmente interessantes com multimídia, tanto tocar música e 
+  vídeos em uma página da web, como capturar vídeos com a sua câmera e exibir no computador de outra pessoa.
 
 
   ? APIs de Terceiros
@@ -78,18 +78,18 @@
 
 
   ? O que JavaScript está fazendo na sua página web?
-  Quando carregamos uma página da web em em unvagador, estamos executando seu código, o HTML, CSS e JavaScriptm dentro de um 
+  Quando carregamos uma página da web em um naveagador, estamos executando seu código, o HTML, CSS e JavaScript dentro de um 
   ambiente de execução (a guia do navegador). Isso é como uma fábrica que pega a matéria prima (o código) e transforma em um
   produto (a página web).
 
   Um uso muito comum do JS é modificar dinamicamente HTML e CSS para atualizar uma interface do usuário, por meio da API do DOM.
-  Observe que o código em seus documentos web geralmente é carregado e executadona ordem em que aparece na página. Se o JS 
+  Observe que o código em seus documentos web geralmente é carregado e executado na ordem em que aparece na página. Se o JS 
   carregar antes e tentar executar antes do carregamento HTML e CSS afetado, poderão ocorrer erros. (Veremos como contorná-los
   mais adiante).
 
 
   ? Ordem de execução do JavaScript
-  Quando o navegador encontra um bloco de código JS, ele geralmente executa na ordem, decima para baixo.
+  Quando o navegador encontra um bloco de código JS, ele geralmente executa na ordem, de cima para baixo.
   Isso significa que precisamos ter cuidado com a ordem na qual colocamos as coisas. 
   Por exemplo, levemos em consideração o exerciseIntroduction.html 
 
@@ -103,7 +103,7 @@
   }
 
   Se invertermos a ordem das duas primeiras linhas de código, ele não funcionaria, receberíamos um erro no console do navegador
-  TypeError: button is undefined. Isso significa que o objeto button não existe ainda, então ós não podemos adiconar um evenListener
+  TypeError: button is undefined. Isso significa que o objeto button não existe ainda, então não podemos adiconar um EventListener
   a ele.
 
 
@@ -127,7 +127,7 @@
   Há um considerável número de problemas envolvendo o carregamento de scripts na ordem correta.
 
   Um problema comum é que todo o HTML de uma página é carregado na ordem em que ele aparece. Se você estiver usando JavaScript para 
-  manipular alguns elementos da página (Mais precismente o DOM), seu código não irá funcionar caso o JS for carregado e executado antes
+  manipular alguns elementos da página (Mais precisamente o DOM), seu código não irá funcionar caso o JS for carregado e executado antes
   mesmo dos elementos HTML estarem disponíveis.
 
   Em alguns exemplos que vimos, tanto nos scripts internos ou externos, o JS é carregado e acionado dentro do cabeçalho do documento,
@@ -145,12 +145,12 @@
   - No exemplo externo, vimos um recurso moderno do JS para resolver esse problema.
     Trata-se do atributo defer, que informa ao browser para continuar renderizando o conteúdo HTML uma vez que a tag <script> foi atingida.
     
-    <script src="script.js" defer></script>
+    *<script src="script.js" defer></script>
 
     Neste caso, ambos script e HTML irão carregar de forma simultânea e o código irá funcionar.
   
 
-  * Nota: No caso externo, nós não precisamos utilizar o evento DOMContentLoaded porque o atributo defer resolve o nosso problema.
+    Nota: No caso externo, nós não precisamos utilizar o evento DOMContentLoaded porque o atributo defer resolve o nosso problema.
     Nós não utilizamos defer como solução para os exemplos internos pois defer funciona apenas com scripts externos.
 
     Uma solução à moda antiga para esse problema era colocar o elemento script bem no final do body da página (antes da tag </body).
@@ -183,7 +183,7 @@
     Você não pode garantir que o script jquery.js carregará antes ou depois do script2.js e script3.js. Nesse caso, se alguma função desses scripts
     dependerem de algo vindo do jquery, ele produzirá um erro pois o jquery ainda não foi definido/carregado quando os scripts executaram essa função.
 
-    - async dev e ser usado quando houver muitos scripts rodando no background, e você precisa que estejam disponpíveis o mais rápido possível.
+    - async deve ser usado quando houver muitos scripts rodando no background, e você precisa que estejam disponíveis o mais rápido possível.
     Por exemplo, talvez você tenha muitos arquivos de dados de um jogo para carregar que serão necessários assim que o jogo iniciar, mas por enquanto,
     você só quer entrar e ver a tela de carregamento, a do título do jogo e o lobby sem ser bloqueado pelo carregamento desses scripts.
 

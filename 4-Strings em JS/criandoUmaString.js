@@ -1,5 +1,5 @@
 //  Declarando e incializando a string; 
-//  /' Carecter de escape para aspas simples, para não haver erro pois optei por utiliza-la para conter a string.
+//  \' Carecter de escape para aspas simples, para não haver erro pois optei por utiliza-la para conter a string.
 var bigMouth = 'I\'ve got no right to take my place';
 console.log(bigMouth);
 
