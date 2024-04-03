@@ -32,7 +32,20 @@ var myArray = new Array("Hello", "myVar", 3.14);
 var fruits = ["Mongo", "Litter", "Lemon"];
 
 //Referenciando os elementos do Array com
-fruits[2];  // Return 'Lemon'
+fruits[2]; // Return 'Lemon'
 
 // Referenciando os elementos do Array com o operador do array
-fruits['2'];  // Return 'Lemon'
+fruits["2"]; // Return 'Lemon'
+
+// Compreendendo o comprimento
+var cats = ["Dusty", "Misty", "Twiggy"];
+// console.log(cats.length); // Comprimento do array = 3
+
+cats.length = 2;
+// console.log(cats); // Exibe "Dusty", "Misty", Twiggy foi removido
+
+cats.length = 0;
+// console.log(cats) // Nada é apresentado, o array está vazio
+
+cats.length = 3;
+// console.log(cats);  // [undefined, undefined, undefined ]
