@@ -6,7 +6,7 @@ buttonSubmit.addEventListener('click', validatingNumber);
 
 // Função que gera o número enigmático
 function generateRandomNumber () {
-  const randomNumber = Math.round((Math.random () * 3));
+  const randomNumber = Math.round((Math.random () * 100));
   return randomNumber;
 }
 

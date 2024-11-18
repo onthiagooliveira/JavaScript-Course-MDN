@@ -48,4 +48,33 @@ cats.length = 0;
 // console.log(cats) // Nada é apresentado, o array está vazio
 
 cats.length = 3;
-// console.log(cats);  // [undefined, undefined, undefined ]
+// console.log(cats);  // [undefined, undefined, undefined]
+
+// Iteração em Arrays
+var colors = ["Red", "Green", "Blue"];
+
+for (var i = 0; i < colors.length; i++) {
+  // for (var contadora inicia em 0; enquanto contadora < comprimento do Array; incremente +1)
+  // A cada volta do laço o valor do índice é exibido, isso para cada elemento do array
+  // console.log(colors[i]);
+}
+
+// O método forEach() também permite um jeito de iterar sobre/em um array
+colors.forEach(function (color) {
+  //console.log(color)
+});
+
+// Alternativamente, podemos encurtar o código para o parâmetro forEach com Arrow functions ES6
+//colors.forEach((color) => console.log(color));
+
+// Valores não atribuídos (undefined) não são iterados no loop forEach()
+var array = ['primeiro', 'segundo', , 'quarto'];
+// array.forEach((itens) => console.log(itens) );
+
+if( array[2] === undefined) {
+  console.log('Undefined field')
+  array[2] = undefined;  // Valores undefined somente são listados quando atribuídos manualmente no elemento
+  //array.forEach((itens) => console.log(itens))
+  
+}
+

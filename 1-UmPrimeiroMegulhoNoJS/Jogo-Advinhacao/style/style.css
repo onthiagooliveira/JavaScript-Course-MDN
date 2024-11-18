@@ -19,11 +19,11 @@ body {
   width: 100vw;
   height: 100vh; 
   background-color: black;
-  background-image: url(https://cdn.dribbble.com/userupload/10867364/file/original-12fd939c7e860f1377b9fbcfb5defa09.png?resize=1024x768);
+  background-image: url('https://cdn.dribbble.com/userupload/10867364/file/original-12fd939c7e860f1377b9fbcfb5defa09.png?resize=1024x768');
   background-position: top;
   background-repeat:no-repeat;
   background-size: cover;
-  backdrop-filter: brightness(0.2);  
+  backdrop-filter: brightness(0.5);  
   display: flex;
   align-items: center;
   justify-content: center;
