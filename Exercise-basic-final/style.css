@@ -1,0 +1,108 @@
+body {
+  align-items: center;
+  background: url('https://img.freepik.com/free-vector/gradient-mountain-landscape_23-2149159768.jpg?t=st=1731929903~exp=1731933503~hmac=c41ba40fd07627e41c5fc1b9423a216747d5d59bf768dc1e631aeaf03ca1a9cf&w=1380');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  height: 100vh;
+  display: flex;
+  place-content: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.form-section {
+  width: 300px;
+  height: 160px;
+  background-color: white;
+  padding: 32px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+label {
+  font-weight: bold;
+}
+
+div {
+  padding-bottom: 20px;
+}
+
+p {
+  background: #ffc125;
+  color: #5e2612;
+  padding: 10px;
+  visibility: hidden;
+}
+
+.field-name {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+#message-error{
+  background-color: rgb(247, 219, 219);
+  border-radius: 3px;
+  display: none;
+  text-align: center;
+  font-size: 14px;
+  padding: 3px 6px;
+  transition: 0.15ms;
+}
+
+#customname {
+  background-color: #fdfdfd;
+  border: 1px solid #10536d;
+  padding: 10px 0;
+  text-align: center;
+  outline: none;
+}
+
+.language-history {
+  width: 100%;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+#customname,
+.randomize {
+  width: 300px;
+  padding: 10px 0;
+}
+
+input[type=radio] {
+  accent-color: #10536d;
+}
+
+#pt-label {
+  margin-left: 16px;
+}
+
+.randomize {
+  background-color: #0d0d0d;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.randomize:hover {
+  background-color: #10536d;
+}
+
+
+.story {
+  height: 100px;
+  width: 200px;
+  background-color: #ffc125;
+  
+}
+
