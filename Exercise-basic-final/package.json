@@ -1,0 +1,15 @@
+{
+  "name": "exercise-basic-final",
+  "version": "1.0.0",
+  "description": "Exercise final of the course introduction in JS MDN",
+  "main": "index.html",
+  "scripts": {
+    "static": "serve -p 5050 static",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "onThiagooliveira",
+  "license": "MIT",
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}
